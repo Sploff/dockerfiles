@@ -9,7 +9,7 @@ services:
       - PGID=1000
       - MEM_LIMIT=1024M #optional
     volumes:
-      - /home/chnil/persistantDocker/unifiController:/config
+      - /home/sploff/persistantDocker/unifiController:/config
     ports:
       - 3478:3478/udp
       - 10001:10001/udp

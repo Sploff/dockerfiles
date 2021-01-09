@@ -7,4 +7,4 @@ docker run \
 -e TYPE=FORGE \
 --name mc-forge \
 -v /home/chnil/Documents/private/minecraft/forge_server:/data \
-minecraft_forge
+itzg/minecraft-server

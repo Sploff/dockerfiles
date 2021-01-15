@@ -1,0 +1,14 @@
+---
+version: "3.8"
+services:
+  unifi-controller:
+    image: homeassistant/home-assistant:stable
+    container_name: homeAss
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - MEM_LIMIT=1024M #optional
+    volumes:
+      - /home/chnil/persistantDocker/homeAss:/config
+    network: host
+    restart: unless-stopped

@@ -17,7 +17,7 @@ services:
   node-red:
     image: nodered/node-red
     container_name: node-red
-    user: user
+    user: 1000:1000
     volumes:
       - /home/chnil/persistantDocker/nodeRed:/data
     environment:

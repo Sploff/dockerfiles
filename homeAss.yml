@@ -12,4 +12,11 @@ services:
       - /home/chnil/persistantDocker/homeAss:/config
     network_mode: host
     restart: unless-stopped
-
+  node-red:
+    image: nodered/node-red
+    container_name: node-red
+    volumes:
+      - /home/chnil/persistantDocker/nodeRed:/data
+    ports: 
+      - "1880:1880"
+    restart: unless-stopped

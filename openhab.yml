@@ -1,0 +1,16 @@
+---
+version: "3.8"
+services:
+  home-assistant:
+    image: openhab/openhab
+    container_name: openhab
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - MEM_LIMIT=1024M #optional
+    volumes:
+      - /home/sploff/persistantDocker/openHab:/config
+    environment:
+      - TZ=Europe/Stockholm
+    network_mode: host
+    restart: unless-stopped

@@ -1,0 +1,18 @@
+---
+version: "3.8"
+services:
+  home-assistant:
+    image: itzg/minecraft-server
+    container_name: minecraft-science_0
+    environment:
+      - EULA=TRUE
+      - VERSION=1.12.2
+      - TYPE=FORGE
+      - MEM_LIMIT=1024M #optional
+    volumes:
+      - /home/sploff/persistantDocker/minecraft-science_0:/data
+    environment:
+      - TZ=Europe/Stockholm
+    ports:
+      - "25565:25565"
+    restart: unless-stopped

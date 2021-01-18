@@ -10,13 +10,19 @@ services:
       - MEM_LIMIT=1024M #optional
     volumes:
       - /home/chnil/persistantDocker/homeAss:/config
+    environment:
+      - TZ=Europe/Stockholm
     network_mode: host
     restart: unless-stopped
   node-red:
     image: nodered/node-red
     container_name: node-red
+    environment:
+      - PUID=1000
     volumes:
       - /home/chnil/persistantDocker/nodeRed:/data
+    environment:
+      - TZ=Europe/Stockholm
     ports: 
       - "1880:1880"
     restart: unless-stopped

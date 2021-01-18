@@ -6,6 +6,6 @@ docker run \
 -e VERSION=1.12.2 \
 -e TYPE=FORGE \
 --name minecraft-science_0 \
---restart unless-stopped
+--restart unless-stopped \
 -v /home/sploff/persistantDocker/minecraft-science_0:/data \
 itzg/minecraft-server

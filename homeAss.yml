@@ -17,8 +17,7 @@ services:
   node-red:
     image: nodered/node-red
     container_name: node-red
-    environment:
-      - PUID=1000
+    user: 1000
     volumes:
       - /home/chnil/persistantDocker/nodeRed:/data
     environment:

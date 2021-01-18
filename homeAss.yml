@@ -2,7 +2,7 @@
 version: "3.8"
 services:
   home-assistant:
-    image: homeassistant/home-assistant:stable
+    image: homeassistant/amd64-hassio-supervisor:latest
     container_name: homeAss
     environment:
       - PUID=1000
@@ -13,15 +13,4 @@ services:
     environment:
       - TZ=Europe/Stockholm
     network_mode: host
-    restart: unless-stopped
-  node-red:
-    image: nodered/node-red
-    container_name: node-red
-    user: 1000:1000
-    volumes:
-      - /home/chnil/persistantDocker/nodeRed:/data
-    environment:
-      - TZ=Europe/Stockholm
-    ports: 
-      - "1880:1880"
     restart: unless-stopped

@@ -5,10 +5,10 @@ services:
     image: itzg/minecraft-server
     container_name: minecraft-science_0
     environment:
-      - EULA=TRUE
-      - VERSION=1.12.2
-      - TYPE=FORGE
-      - MEM_LIMIT=1024M #optional
+      - EULA: TRUE
+      - VERSION: 1.12.2
+      - TYPE: FORGE
+      - MEM_LIMIT: 1024M #optional
     volumes:
       - /home/sploff/persistantDocker/minecraft-science_0:/data
     environment:

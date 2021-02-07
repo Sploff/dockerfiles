@@ -7,6 +7,6 @@ docker run \
 -v ~/persistantDocker/iSpy/config/:/agent/Media/XML/ \
 -v ~/persistantDocker/iSpy/media/:/agent/Media/WebServerRoot/Media/ \
 -v ~/persistantDocker/iSpy/commands:/agent/Commands/ \
---name iSpy \
+--name agentDvr \
 --restart unless-stopped \
 doitandbedone/ispyagentdvr:latest

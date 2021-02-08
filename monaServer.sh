@@ -2,11 +2,11 @@ docker run \
 -d \
 -it \
 -e TZ=Europe/Stockholm \
--p 10000:80 \
--p 10001:554 \
--p 10002:1935 \
--p 10002:1935/udp \
--v /home/sploff/persistantDocker/monaServer:/usr/local/bin/www monaserver/monaserver \
+-p 10010:80 \
+-p 10011:554 \
+-p 10012:1935 \
+-p 10012:1935/udp \
+-v /home/sploff/persistantDocker/monaServer:/usr/local/bin/www \
 --name mona \
 --restart unless-stopped \
 monaserver/monaserver

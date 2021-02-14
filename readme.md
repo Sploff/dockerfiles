@@ -15,3 +15,6 @@
 
 ## Httpd
 10100 -> apache-GoPro
+
+## NginX
+10200 -> 80

@@ -2,7 +2,8 @@
 - $> scp /path/to/file username@\<ip\>:/path/to/destination
 
 ## Portainer
-10000:80
+10000:8000
+10001:9000
 
 ## Mona
 10010:80

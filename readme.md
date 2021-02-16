@@ -15,6 +15,8 @@
 
 ## ZoneMinder
 10030:80
+10031:443
+10032:9000
 
 ## Httpd
 10100 -> apache-GoPro

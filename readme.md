@@ -13,6 +13,9 @@
 10021 (443)
 10022 (5900)
 
+## ZoneMinder
+10030:80
+
 ## Httpd
 10100 -> apache-GoPro
 

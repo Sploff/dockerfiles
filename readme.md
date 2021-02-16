@@ -1,6 +1,8 @@
 ## Copy files to server
 - $> scp /path/to/file username@\<ip\>:/path/to/destination
 
+## Portainer
+10000:80
 
 ## Mona
 10010:80

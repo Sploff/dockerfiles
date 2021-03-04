@@ -35,6 +35,7 @@
 
 ## Httpd
 10100 -> apache-GoPro
+10101 -> apache-flitig
 
 ## NginX
 10200 -> 80

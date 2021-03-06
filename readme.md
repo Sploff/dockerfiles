@@ -33,6 +33,9 @@
 10048:32414/udp
 10049:32469
 
+## Jenkins
+10050:80
+
 ## Httpd
 10100 -> apache-GoPro
 10101 -> apache-flitig
